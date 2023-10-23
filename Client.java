@@ -10,7 +10,7 @@ public class Client {
     String message; //message send to the server
     String MESSAGE; //capitalized message read from the server
     public void Client() {}
-    void run()
+    void run(String peerId)
     {
         try{
 //create a socket to connect to the server
@@ -21,31 +21,25 @@ public class Client {
             out.flush();
             in = new ObjectInputStream(requestSocket.getInputStream());
 //get Input from standard input
-            BufferedReader bufferedReader = new BufferedReader(new
-                    InputStreamReader(System.in));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             while(true)
             {
-                System.out.print("Hello, please input a sentence: ");
-//read a sentence from the standard input
-                message = bufferedReader.readLine();
-//Send the sentence to the server
-                sendMessage(message);
-//Receive the upperCase sentence from the server
+                //Send the sentence to the server
+                sendMessage(peerId);
+                //Receive the upperCase sentence from the server
                 MESSAGE = (String)in.readObject();
-//show the message to the user
+                //show the message to the user
                 System.out.println("Receive message: " + MESSAGE);
             }
         }
         catch (ConnectException e) {
-            System.err.println("Connection refused. You need to initiate a
-                    server first.");
+            System.err.println("Connection refused. You need to initiate a server first.");
         }
         catch ( ClassNotFoundException e ) {
             System.err.println("Class not found");
         }
         catch(UnknownHostException unknownHost){
-            System.err.println("You are trying to connect to an unknown
-                    host!");
+            System.err.println("You are trying to connect to an unknown host!");
         }
         catch(IOException ioException){
             ioException.printStackTrace();
@@ -77,7 +71,12 @@ public class Client {
     //main method
     public static void main(String args[])
     {
-        Client client = new Client();
-        client.run();
+        if (args.length == 0) {
+            System.out.println("No peer id is passed. Please pass it.");
+        }
+        else {
+            Client client = new Client();
+            client.run(args[0]);
+        }
     }
 }
