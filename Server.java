@@ -26,7 +26,8 @@ public class Server {
      * loop and are responsible for dealing with a single client's requests.
      */
     private static class Handler extends Thread {
-        private String message; //message received from the client
+        private String peerId; //message received from the client
+        private String portNumber;
         private String MESSAGE; //uppercase message send to the client
         private Socket connection;
         private ObjectInputStream in; //stream read from the socket
@@ -46,14 +47,16 @@ public class Server {
                     while(true)
                     {
                         //receive the message sent from the client
-                        message = (String)in.readObject();
+                        String[] arr = (String[])in.readObject();
+                        peerId = arr[0];
+                        portNumber = arr[1];
                         //show the message to the user
-                        peerMap.put(message,"true");
-                        System.out.println("Peer with peerId " + message + " is connected. ");
+                        peerMap.put(peerId,portNumber);
+                        System.out.println("Peer with peerId " + peerId + " is connected. ");
                         //Capitalize all letters in the message
-                        MESSAGE = message.toUpperCase();
+                        MESSAGE = peerId.toUpperCase();
                         //send MESSAGE back to the client
-//                        sendMessage(MESSAGE);
+                        //sendMessage(MESSAGE);
                     }
                 }
                 catch(ClassNotFoundException classnot){

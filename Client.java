@@ -3,6 +3,8 @@ import java.io.*;
 import java.nio.*;
 import java.nio.channels.*;
 import java.util.*;
+import peerFunctions.ThreadCreation;
+import helperFunctions.GetPeerDetails;
 public class Client {
     Socket requestSocket; //socket connect to the server
     ObjectOutputStream out; //stream write to the socket
@@ -13,19 +15,22 @@ public class Client {
     void run(String peerId)
     {
         try{
-//create a socket to connect to the server
+        //create a socket to connect to the server
             requestSocket = new Socket("localhost", 8000);
             System.out.println("Connected to localhost in port 8000");
-//initialize inputStream and outputStream
+            //initialize inputStream and outputStream
             out = new ObjectOutputStream(requestSocket.getOutputStream());
             out.flush();
             in = new ObjectInputStream(requestSocket.getInputStream());
-//get Input from standard input
+            //get Input from standard input
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             while(true)
             {
                 //Send the sentence to the server
-                sendMessage(peerId);
+                int portNum = createThreadForPeer(peerId);
+                String[] arr = {peerId,String.valueOf(portNum)};
+                sendMessage(arr);
+                makeConnections();
                 //Receive the upperCase sentence from the server
                 MESSAGE = (String)in.readObject();
                 //show the message to the user
@@ -57,7 +62,7 @@ public class Client {
         }
     }
     //send a message to the output stream
-    void sendMessage(String msg)
+    void sendMessage(String[] msg)
     {
         try{
 //stream write the message
@@ -69,6 +74,18 @@ public class Client {
         }
     }
     //main method
+    int createThreadForPeer(String peerId){
+        ThreadCreation newThread = new ThreadCreation();
+        int portNumber = newThread.run(peerId);
+        return portNumber;
+    }
+    void makeConnections(){
+        GetPeerDetails peerDetails = new GetPeerDetails();
+        peerDetails.initialize();
+        String initialPeerId = peerDetails.getInitialPeerId();
+        System.out.println("Initial peer id is "+initialPeerId);
+
+    }
     public static void main(String args[])
     {
         if (args.length == 0) {
