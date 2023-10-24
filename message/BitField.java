@@ -22,14 +22,14 @@ public class BitField {
         pieces = new Piece[numberOfPieces];
         for (int i = 0; i < pieces.length; i++) {
             pieces[i] = new Piece();
-            System.out.println(pieces[i].getContent());
-            System.out.println(pieces[i].getPieceIndex());
+            //System.out.println(pieces[i].getContent());
+           // System.out.println(pieces[i].getPieceIndex());
 
         }
 }
-public static void main(String[] args) {
+/*public static void main(String[] args) {
     BitField bit = new BitField();
     System.out.println(bit.numberOfPieces);
 }
-
+*/
 }
