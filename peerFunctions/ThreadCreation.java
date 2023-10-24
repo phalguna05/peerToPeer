@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ThreadCreation {
     private static int portNumber;
-    public static int run(String id){
+    public static Thread run(String id){
         String fileName = "PeerInfo.cfg";
         List<List<String>> linesAsWords = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
@@ -31,7 +31,6 @@ public class ThreadCreation {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println(portNumber);
         try {
             ServerSocket serverSocket = new ServerSocket(portNumber);
             System.out.println("Server is listening on port " + portNumber);
@@ -67,10 +66,12 @@ public class ThreadCreation {
                 }
             });
             thread.start();
+            return thread;
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return portNumber;
+        return new Thread();
+
     }
 
     public static void main(String args[]) {
