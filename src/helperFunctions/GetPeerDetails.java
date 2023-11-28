@@ -49,4 +49,12 @@ public class GetPeerDetails {
         }
         return "None";
     }
+    public int getFileStatus(String peerId){
+        for (List<String> list : linesAsWords) {
+            if(list.get(0).equals(peerId)){
+                return Integer.parseInt(list.get(2));
+            }
+        }
+        return 0;
+    }
 }

@@ -10,12 +10,10 @@ public class Server {
     public static void main(String[] args) throws Exception {
         System.out.println("The server is running.");
         ServerSocket listener = new ServerSocket(sPort);
-        int clientNum = 1;
         try {
             while(true) {
-                new Handler(listener.accept(),clientNum).start();
-                System.out.println("Client " + clientNum + " isconnected!");
-                clientNum++;
+                new Handler(listener.accept()).start();
+//
             }
         } finally {
             listener.close();
@@ -33,9 +31,8 @@ public class Server {
         private ObjectInputStream in; //stream read from the socket
         private ObjectOutputStream out; //stream write to the socket
         private int no; //The index number of the client
-        public Handler(Socket connection, int no ) {
+        public Handler(Socket connection ) {
             this.connection = connection;
-            this.no = no;
         }
         public void run() {
             try{
@@ -67,7 +64,7 @@ public class Server {
                 System.out.println("Disconnect with Client ");
             }
             finally{
-//Close connections
+                //Close connections
                 try{
                     in.close();
                     out.close();

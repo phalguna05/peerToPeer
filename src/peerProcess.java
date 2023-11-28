@@ -2,15 +2,16 @@ import java.net.*;
 import java.io.*;
 import java.lang.*;
 import java.net.Socket;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import config.PeerInitialization;
+import peerFunctions.HandleConnections;
 import peerFunctions.ThreadCreation;
 import helperFunctions.GetPeerDetails;
 
 
-public class peerProcess {
+class peerProcess {
     Socket requestSocket; //socket connect to the server
     ObjectOutputStream out; //stream write to the socket
     ObjectInputStream in; //stream read from the socket
@@ -21,98 +22,126 @@ public class peerProcess {
     public static String peer_id;
     private static int portNumber;
     private static Thread serverThread;
-    public void Client() {}
-    void run(String peerId)
-    {
-        try{
-        //create a socket to connect to the server
+    public static PeerInitialization peerInfo;
+
+    void run(String peerId) {
+        try {
+            //create a socket to connect to the server
             requestSocket = new Socket("localhost", 8000);
             System.out.println("Connected to localhost in port 8000");
             //initialize inputStream and outputStream
             out = new ObjectOutputStream(requestSocket.getOutputStream());
             out.flush();
             in = new ObjectInputStream(requestSocket.getInputStream());
+            peerInfo = new PeerInitialization(peerId);
+//            initialize(peerId);
             //get Input from standard input
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            while(true)
-            {
-                //Send the sentence to the server
-                String[] arr = {peerId,String.valueOf(portNumber)};
-                ThreadCreation curThreadCreator = new ThreadCreation();
-                Thread curThread = curThreadCreator.run(peerId);
-                sendMessage(arr);
-                makeConnections();
-                //Receive the upperCase sentence from the server
-                MESSAGE = (String)in.readObject();
-                //show the message to the user
-                System.out.println("Receive message: " + MESSAGE);
-            }
-        }
-        catch (ConnectException e) {
+            String[] arr = {peerId, String.valueOf(portNumber)};
+            new ThreadCreation(peerId,peerInfo);
+
+
+            sendMessage(arr);
+            makeConnections();
+            //Receive the upperCase sentence from the server
+            MESSAGE = (String) in.readObject();
+            //show the message to the user
+            System.out.println("Receive message: " + MESSAGE);
+
+        } catch (ConnectException e) {
             System.err.println("Connection refused. You need to initiate a server first.");
-        }
-        catch ( ClassNotFoundException e ) {
+        } catch (ClassNotFoundException e) {
             System.err.println("Class not found");
-        }
-        catch(UnknownHostException unknownHost){
+        } catch (UnknownHostException unknownHost) {
             System.err.println("You are trying to connect to an unknown host!");
-        }
-        catch(IOException ioException){
+        } catch (IOException ioException) {
             ioException.printStackTrace();
-        }
-        finally{
-//Close connections
-            try{
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        } finally {
+        //Close connections
+            try {
                 in.close();
                 out.close();
                 requestSocket.close();
-            }
-            catch(IOException ioException){
+            } catch (IOException ioException) {
                 ioException.printStackTrace();
             }
         }
     }
+
     //send a message to the output stream
-    void sendMessage(String[] msg)
-    {
-        try{
-//stream write the message
+    void sendMessage(String[] msg) {
+        try {
+            //stream write the message
             out.writeObject(msg);
             out.flush();
-        }
-        catch(IOException ioException){
+        } catch (IOException ioException) {
             ioException.printStackTrace();
         }
     }
+
     //main method
-    Thread createThreadForPeer(String peerId){
-        ThreadCreation newThread = new ThreadCreation();
-        Thread currThread = newThread.run(peerId);
-        return currThread;
-    }
-    void makeConnections(){
+
+
+    void makeConnections() {
         GetPeerDetails peerDetails = new GetPeerDetails();
         peerDetails.initialize();
         int initialPeerId = Integer.parseInt(peerDetails.getInitialPeerId());
         ArrayList<Thread> list = new ArrayList<>();
         int convertedPeerId = Integer.parseInt(peer_id);
-        for(int i = initialPeerId;i<convertedPeerId;i++){
+
+        for (int i = initialPeerId; i < convertedPeerId; i++) {
             // handshake with peerId and itself
-            Thread th = new Thread(new HandleConnections(convertedPeerId,i));
+            Thread th = new Thread(new HandleConnections(convertedPeerId, i, peerInfo));
             th.start();
 
         }
     }
 
-    public static void main(String args[])
-    {
+//    void initialize(String peerId) throws IOException {
+//        try {
+//            System.out.println("Reading data from Common.cfg");
+//            List<String> linesFromFile = Files.readAllLines(Path.of("Common.cfg"));
+//            PeerInitialization peerInit = new PeerInitialization();
+//            for (String line : linesFromFile) {
+//                String[] arr = line.split("\\s+");
+//
+//                if (arr[0].equalsIgnoreCase("NumberOfPreferredNeighbors")) {
+//                    peerInit.numberOfPreferredNeighbours = Integer.parseInt(arr[1]);
+//                } else if (arr[0].equalsIgnoreCase("UnchokingInterval")) {
+//                    peerInit.unchockingInterval = Integer.parseInt(arr[1]);
+//                } else if (arr[0].equalsIgnoreCase("OptimisticUnchokingInterval")) {
+//                    peerInit.optimisticUnchokingInterval = Integer.parseInt(arr[1]);
+//                } else if (arr[0].equalsIgnoreCase("FileName")) {
+//                    peerInit.fileName = arr[1];
+//                } else if (arr[0].equalsIgnoreCase("FileSize")) {
+//                    peerInit.fileSize = Integer.parseInt(arr[1]);
+//                } else if (arr[0].equalsIgnoreCase("PieceSize")) {
+//                    peerInit.pieceSize = Integer.parseInt(arr[1]);
+//                }
+//            }
+//            GetPeerDetails peerDetails = new GetPeerDetails();
+//            peerDetails.initialize();
+//            int fileStatus = peerDetails.getFileStatus(peerId);
+//            if (fileStatus == 0) {
+//                peerInit.isFileReceived = true;
+//            }
+//            peerInit.isProcessComplete = false;
+//        } catch (IOException e) {
+//            throw e;
+//        }
+
+    //}
+
+    public static void main(String args[]) {
         if (args.length == 0) {
             System.out.println("No peer id is passed. Please pass it.");
-        }
-        else {
+        } else {
             peerProcess peerProcess = new peerProcess();
             peer_id = args[0];
             peerProcess.run(args[0]);
         }
     }
+
+
 }
