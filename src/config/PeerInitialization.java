@@ -7,6 +7,7 @@ import message.Piece;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.Socket;
 import java.io.OutputStream;
 import java.util.*;
 
@@ -39,13 +40,13 @@ public class PeerInitialization {
 
         public static HashSet<String> unPreferredNeighbors;
 
-        public static HashMap<String, OutputStream> socketMap;
+        public static HashMap<String, Socket> socketMap;
         public static String optimisticallyUnchokedNeighbor;
         public static HashSet<String> neighborsWhichUnChokedMe;
 
         public static Boolean isDownloadComplete = false;
 
-        public PeerInitialization(String peerId){
+        public PeerInitialization(String peerId) throws IOException {
                 isFileReceived = false;
                 this.peerId = peerId;
                 String fileN = "Common.cfg";
@@ -143,16 +144,38 @@ public class PeerInitialization {
                 }
         }
 
-        public int getPieceToRequest(int peerId){
-                ArrayList<Integer> remotePeerBitField = bitFieldObj.bitFieldMap.get(Integer.toString(peerId));
-                for(int i=0;i<remotePeerBitField.size();i++){
-                        int pieceStatus = bitFieldObj.bitField[i] & 0xFF;
-                        if(remotePeerBitField.get(i) == 1 && pieceStatus==0 && !pieceRequestSet.contains(i)){
-                                pieceRequestSet.add(i);
-                                return i;
+        public int[] getPieceToRequest(int peerId){
+                HashSet<String> as = new HashSet<>();
+                int[] resArr = new int[2];
+                resArr[0] = -1;
+                resArr[1] = -1;
+                while(as.size()!=neighborsWhichUnChokedMe.size()) {
+                        String id = getRandomNeighbor();
+                        as.add(id);
+                        ArrayList<Integer> remotePeerBitField = bitFieldObj.bitFieldMap.get(id);
+                        ArrayList<Integer> tempArr = new ArrayList<>();
+                        for (int i = 0; i < remotePeerBitField.size(); i++) {
+                                int pieceStatus = bitFieldObj.bitField[i] & 0xFF;
+                                if (remotePeerBitField.get(i) == 1 && pieceStatus == 0 && !pieceRequestSet.contains(i)) {
+
+                                        tempArr.add(i);
+
+
+                                }
+                        }
+                        if(tempArr.size()>0){
+                                Random random = new Random();
+                                int randomIndex = random.nextInt(tempArr.size());
+
+                                // Get the random value from the ArrayList
+                                int randomValue = tempArr.get(randomIndex);
+                                pieceRequestSet.add(randomValue);
+                                resArr[0] = randomValue;
+                                resArr[1] = Integer.parseInt(id);
+                                return resArr;
                         }
                 }
-                return -1;
+                return resArr;
         }
 
         public static int byteArrayToIntBigEndian(ArrayList<Integer> byteArray) {
@@ -193,6 +216,22 @@ public class PeerInitialization {
                 }
         }
 
+        public static <T> T getRandomNeighbor() {
+                // Convert the HashSet to an array
+                T[] array = (T[]) neighborsWhichUnChokedMe.toArray();
+                // Check if the HashSet is not empty
+                if (array.length > 0) {
+                        // Generate a random index
+                        int randomIndex = new Random().nextInt(array.length);
+
+                        // Return the random value from the array
+                        return array[randomIndex];
+                } else {
+                        // Return null or throw an exception, depending on your use case
+                        return null;
+                }
+        }
+
         public static void addNeighborsWhoUnchokedMe(int peerId){
                 neighborsWhichUnChokedMe.add(Integer.toString(peerId));
         }
@@ -200,6 +239,15 @@ public class PeerInitialization {
         public static int getNumberOfPieces(){
                 int numberOfPiecesHave = bitFieldObj.numberOfPieces - bitFieldObj.remainingBits;
                 return numberOfPiecesHave;
+        }
+
+        public static byte[] convertIndexToBytes(int value) {
+                byte[] bytes = new byte[4];
+                bytes[0] = (byte) ((value >> 24) & 0xFF);
+                bytes[1] = (byte) ((value >> 16) & 0xFF);
+                bytes[2] = (byte) ((value >> 8) & 0xFF);
+                bytes[3] = (byte) (value & 0xFF);
+                return bytes;
         }
 
 }

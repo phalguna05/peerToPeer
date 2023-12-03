@@ -2,12 +2,15 @@ package message;
 
 import logger.CustomLogger;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ConnectException;
 import java.net.Socket;
+import java.nio.file.Files;
 import java.util.*;
 import java.net.*;
 import java.io.*;
@@ -26,10 +29,9 @@ public class BitField {
     public static HashSet<Integer> unavailableBits;
 
     public static int remainingBits;
-    public BitField(int fileSize,int pieceSize, Boolean hasFile) {
+    public BitField(int fileSize,int pieceSize, Boolean hasFile) throws IOException {
         Properties properties = new Properties();
-        numberOfPieces = (int) Math.ceil(fileSize / pieceSize);
-        //Creating piece objects
+        numberOfPieces = fileSize / pieceSize;
         bitField = new byte[numberOfPieces];
         bitFieldMap = new HashMap<>();
         bitFieldSentSet = new HashSet<>();
@@ -38,6 +40,19 @@ public class BitField {
         for(int i=0;i<numberOfPieces;i++){
             pieces[i] = new Piece(i);
         }
+        if(hasFile) {
+            File fi = new File("tree.jpg");
+            byte[] fileContent = Files.readAllBytes(fi.toPath());
+            int startInd = 0;
+            int endInd = pieceSize;
+            for(int i = 0;i<numberOfPieces;i++){
+                byte[] portionArray = Arrays.copyOfRange(fileContent, startInd, endInd);
+                pieces[i].setContent(portionArray);
+                startInd = endInd;
+                endInd = endInd+pieceSize;
+            }
+        }
+
         if(hasFile){
             setAllElementsToOne(bitField);
             for(int i=0;i<numberOfPieces;i++){
@@ -55,7 +70,7 @@ public class BitField {
 
     public Boolean addBitFieldToMap(String remotePeerId, ArrayList<Integer> remotePeerBitField){
         bitFieldMap.put(remotePeerId,remotePeerBitField);
-        for(int i=0;i<remotePeerBitField.size();i++){
+        for(int i=0;i<numberOfPieces;i++){
             int pieceStatus = bitField[i] & 0xFF;
             if(remotePeerBitField.get(i) == 1 && pieceStatus==0){
                 return true;
@@ -64,6 +79,8 @@ public class BitField {
         return false;
 
     }
+
+
 
     public void addPeerToBitSet(String peerId){
         bitFieldSentSet.add(peerId);
@@ -75,7 +92,7 @@ public class BitField {
         }
     }
 
-    public void addBitFieldIndex(int ind, CustomLogger logger){
+    public void addBitFieldIndex(int ind, CustomLogger logger, Socket connection){
         bitField[ind] = 1;
         unavailableBits.remove(Integer.toString(ind));
         remainingBits = remainingBits - 1;
@@ -86,6 +103,7 @@ public class BitField {
                 String[] payload = {Integer.toString(peerID),"Finished Downloading"};
                 logger.downloaded(peerID);
                 out.writeObject(payload);
+
             }catch (IOException e) {
                 System.err.println("Connection refused. You need to initiate a server first.");
             }

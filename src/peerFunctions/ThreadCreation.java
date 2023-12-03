@@ -85,93 +85,93 @@ public class ThreadCreation {
                         }
                     }
                     if(arr.size()>0){
-                    long endTime = System.currentTimeMillis();
-                    long elapsedTime = endTime - startTime;
-                    Boolean isHandshakeMsg = decodeHeader(arr);
-                    if (isHandshakeMsg) {
-                        int peerId = ((arr.get(28) & 0xFF) << 24) |
-                                ((arr.get(29) & 0xFF) << 16) |
-                                ((arr.get(30) & 0xFF) << 8) |
-                                (arr.get(31) & 0xFF);
-                        logger.tcpDone(peerId, Integer.parseInt(id));
-                        if (peer.handShakeRequestMap.containsKey(Integer.toString(peerId))) {
-                            Message msg = new Message();
-                            msg.convertMessageLength(peer.bitFieldObj.numberOfPieces + 1);
-                            msg.convertMessageType(5);
-                            msg.addMessagePayload(peer.bitFieldObj.bitField);
-                            byte[] bitFieldMsg = msg.getMessage(Integer.parseInt(id));
+                        long endTime = System.currentTimeMillis();
+                        long elapsedTime = endTime - startTime;
+                        Boolean isHandshakeMsg = decodeHeader(arr);
+                        if (isHandshakeMsg) {
+                            int peerId = ((arr.get(28) & 0xFF) << 24) |
+                                    ((arr.get(29) & 0xFF) << 16) |
+                                    ((arr.get(30) & 0xFF) << 8) |
+                                    (arr.get(31) & 0xFF);
+                            logger.tcpDone(peerId, Integer.parseInt(id));
+                            if (peer.handShakeRequestMap.containsKey(Integer.toString(peerId))) {
+                                Message msg = new Message();
+                                msg.convertMessageLength(peer.bitFieldObj.numberOfPieces + 1);
+                                msg.convertMessageType(5);
+                                msg.addMessagePayload(peer.bitFieldObj.bitField);
+                                byte[] bitFieldMsg = msg.getMessage(Integer.parseInt(id));
 
-                            try {
+                                try {
 //                                if(peer.socketMap.containsKey(Integer.toString(peerId))){
 //                                    OutputStream oo = peer.socketMap.get(Integer.toString(peerId));
 //                                    oo.write(bitFieldMsg);
 //                                }
 //                                else {
-                                GetPeerDetails pd = new GetPeerDetails();
-                                String remoteAddress = pd.getHostAddress(Integer.toString(peerId));
-                                int remotePort = pd.getPortNumber(Integer.toString(peerId));
-                                clientSocket = new Socket(remoteAddress, remotePort);
-                                InputStream io = clientSocket.getInputStream();
-                                OutputStream oo = clientSocket.getOutputStream();
-                                logger.tcpRequest(Integer.parseInt(id), peerId);
-                                oo.write(bitFieldMsg);
+                                    GetPeerDetails pd = new GetPeerDetails();
+                                    String remoteAddress = pd.getHostAddress(Integer.toString(peerId));
+                                    int remotePort = pd.getPortNumber(Integer.toString(peerId));
+                                    clientSocket = new Socket(remoteAddress, remotePort);
+                                    InputStream io = clientSocket.getInputStream();
+                                    OutputStream oo = clientSocket.getOutputStream();
+                                    logger.tcpRequest(Integer.parseInt(id), peerId);
+                                    oo.write(bitFieldMsg);
 
-                                peer.socketMap.put(Integer.toString(peerId), oo);
-                                // }
-                            } catch (IOException e) {
-                                e.printStackTrace();
+
+                                    // }
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                }
+                            } else {
+                                peer.addHandshakeToMap(peerId, arr);
+                                System.out.println("Handshake message is established with " + arr.get(arr.size() - 1));
+                                HandleConnections hn = new HandleConnections(Integer.parseInt(id), peerId, peer);
+                                hn.start();
                             }
                         } else {
-                            peer.addHandshakeToMap(peerId, arr);
-                            System.out.println("Handshake message is established with " + arr.get(arr.size() - 1));
-                            HandleConnections hn = new HandleConnections(Integer.parseInt(id), peerId, peer);
-                            hn.start();
-                        }
-                    } else {
-                        Message msg = new Message();
-                        int type = msg.getTypeOfTheMessage(arr);
-                        int peerId = ((arr.get(arr.size() - 4) & 0xFF) << 24) |
-                                ((arr.get(arr.size() - 3) & 0xFF) << 16) |
-                                ((arr.get(arr.size() - 2) & 0xFF) << 8) |
-                                (arr.get(arr.size() - 1) & 0xFF);
-                        switch (type) {
-                            case 0:
-                                chokeMsgProcess(arr, msg, peerId);
-                                break;
-                            case 1:
-                                unChokeMsgProcess(arr, msg, peerId);
-                                break;
-                            case 2:
-                                interestedMsgProcess(arr, msg, peerId);
-                                break;
-                            case 3:
-                                notInterestedMsgProcess(arr, msg, peerId);
-                                break;
-                            case 4:
-                                System.out.print("Have");
-                                break;
-                            case 5:
-                                bitFieldMsgProcess(arr, msg, elapsedTime, peerId);
-                                break;
-                            case 6:
-                                requestMsgProcess(arr, msg, peerId);
-                                break;
-                            case 7:
-                                pieceMsgProcess(arr, msg, peerId, elapsedTime);
-                                break;
-                            case 8:
-                                calculatePreferredNeighbors();
-                                break;
-                            default:
-                                continue;
+                            Message msg = new Message();
+                            int type = msg.getTypeOfTheMessage(arr);
+                            int peerId = ((arr.get(arr.size() - 4) & 0xFF) << 24) |
+                                    ((arr.get(arr.size() - 3) & 0xFF) << 16) |
+                                    ((arr.get(arr.size() - 2) & 0xFF) << 8) |
+                                    (arr.get(arr.size() - 1) & 0xFF);
+                            switch (type) {
+                                case 0:
+                                    chokeMsgProcess(arr, msg, peerId);
+                                    break;
+                                case 1:
+                                    unChokeMsgProcess(arr, msg, peerId);
+                                    break;
+                                case 2:
+                                    interestedMsgProcess(arr, msg, peerId);
+                                    break;
+                                case 3:
+                                    notInterestedMsgProcess(arr, msg, peerId);
+                                    break;
+                                case 4:
+                                    haveMsgProcess(arr,msg,peerId);
+                                    break;
+                                case 5:
+                                    bitFieldMsgProcess(arr, msg, elapsedTime, peerId);
+                                    break;
+                                case 6:
+                                    requestMsgProcess(arr, msg, peerId);
+                                    break;
+                                case 7:
+                                    pieceMsgProcess(arr, msg, peerId, elapsedTime,connection);
+                                    break;
+                                case 8:
+                                    calculatePreferredNeighbors();
+                                    break;
+                                default:
+                                    continue;
+                            }
+
+
                         }
 
-
-                    }
-
-                    input.close();
-                    output.close();
-                }}
+                        input.close();
+                        output.close();
+                    }}
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -185,52 +185,91 @@ public class ThreadCreation {
             }
 
         }
-        private static void notInterestedMsgProcess(ArrayList<Integer> arr, Message msg, int peerId) {
-            peer.addNotInterestedNeighbor(peerId);
-        }
-        private static void pieceMsgProcess(ArrayList<Integer> arr, Message msg, int peerId, long time) {
-            byte[] payload = new byte[arr.size() - 12];
+        private static void haveMsgProcess(ArrayList<Integer> arr, Message msg, int peerId){
             ArrayList<Integer> index = new ArrayList<>();
             for (int i = 5; i < 9; i++) {
                 index.add(arr.get(i));
             }
             int ind = peer.byteArrayToIntBigEndian(index);
+            logger.have(Integer.parseInt(id),peerId,ind);
+            ArrayList<Integer> bitArr = peer.bitFieldObj.bitFieldMap.get(Integer.toString(peerId));
+            bitArr.set(ind,1);
+            peer.bitFieldObj.bitFieldMap.put(Integer.toString(peerId),bitArr);
+            if(peer.bitFieldObj.bitField[ind]== (byte) 0 && !peer.pieceRequestSet.contains(ind) && peer.neighborsWhichUnChokedMe.contains(peerId)){
+                System.out.println("Have id "+id+" is requesting "+peerId+" for index "+ind);
+                peer.pieceRequestSet.add(ind);
+                byte[] bytes = new byte[4];
+                bytes[0] = (byte) ((ind >> 24) & 0xFF);
+                bytes[1] = (byte) ((ind >> 16) & 0xFF);
+                bytes[2] = (byte) ((ind >> 8) & 0xFF);
+                bytes[3] = (byte) (ind & 0xFF);
+                msg.convertMessageLength(5);
+                msg.convertMessageType(6);
+                msg.addMessagePayload(bytes);
+                byte[] requestMsg = msg.getMessage(Integer.parseInt(id));
+                try {
 
-            peer.bitFieldObj.addBitFieldIndex(ind,logger);
-            peer.bitFieldObj.pieces[ind].setContent(payload);
+                    GetPeerDetails pd = new GetPeerDetails();
+                    String remoteAddress = pd.getHostAddress(Integer.toString(peerId));
+                    int remotePort = pd.getPortNumber(Integer.toString(peerId));
+                    clientSocket = new Socket(remoteAddress, remotePort);
+                    InputStream io = clientSocket.getInputStream();
+                    OutputStream oo = clientSocket.getOutputStream();
+                    oo.write(requestMsg);
+
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+        }
+        private static void notInterestedMsgProcess(ArrayList<Integer> arr, Message msg, int peerId) {
+            peer.addNotInterestedNeighbor(peerId);
+            logger.notInterested(peerId,Integer.parseInt(id));
+        }
+        private static void pieceMsgProcess(ArrayList<Integer> arr, Message msg, int peerId, long time, Socket connection) {
+            byte[] payload = new byte[arr.size() - 12];
+            ArrayList<Integer> index = new ArrayList<>();
+            for (int i = 5; i < 9; i++) {
+                index.add(arr.get(i));
+            }
+            byte[] pieceContent = new byte[peer.pieceSize];
+            for (int i=9;i<arr.size()-4;i++){
+                pieceContent[i-9] = (arr.get(i).byteValue());
+            }
+
+            int ind = peer.byteArrayToIntBigEndian(index);
+            peer.bitFieldObj.addBitFieldIndex(ind,logger,connection);
+            peer.bitFieldObj.pieces[ind].setContent(pieceContent);
             peer.bitFieldObj.pieces[ind].setIsPresent(true);
             peer.addDownloadRates(peerId, time, arr.size());
             logger.downloading(Integer.parseInt(id),peerId,ind,peer.getNumberOfPieces());
-            if(peer.neighborsWhichUnChokedMe.contains(Integer.toString(peerId))) {
-                int indVal = peer.getPieceToRequest(peerId);
-                if (indVal != -1) {
+            int[] indVal = peer.getPieceToRequest(peerId);
+            if(peer.neighborsWhichUnChokedMe.contains(Integer.toString(indVal[1]))) {
+                System.out.println("id "+id+" is requesting "+indVal[1]+" for index "+indVal[0]);
+                if (indVal[0] != -1) {
                     byte[] bytes = new byte[4];
-                    bytes[0] = (byte) ((indVal >> 24) & 0xFF);
-                    bytes[1] = (byte) ((indVal >> 16) & 0xFF);
-                    bytes[2] = (byte) ((indVal >> 8) & 0xFF);
-                    bytes[3] = (byte) (indVal & 0xFF);
+                    bytes[0] = (byte) ((indVal[0] >> 24) & 0xFF);
+                    bytes[1] = (byte) ((indVal[0] >> 16) & 0xFF);
+                    bytes[2] = (byte) ((indVal[0] >> 8) & 0xFF);
+                    bytes[3] = (byte) (indVal[0] & 0xFF);
                     msg.convertMessageLength(5);
                     msg.convertMessageType(6);
                     msg.addMessagePayload(bytes);
                     byte[] requestMsg = msg.getMessage(Integer.parseInt(id));
                     try {
-//                    if(peer.socketMap.containsKey(Integer.toString(peerId))){
-//                        OutputStream oo = peer.socketMap.get(Integer.toString(peerId));
-//                        oo.write(requestMsg);
-//
-//                    }
-//                    else {
-                        GetPeerDetails pd = new GetPeerDetails();
-                        String remoteAddress = pd.getHostAddress(Integer.toString(peerId));
-                        int remotePort = pd.getPortNumber(Integer.toString(peerId));
-                        clientSocket = new Socket(remoteAddress, remotePort);
 
+                        GetPeerDetails pd = new GetPeerDetails();
+                        String remoteAddress = pd.getHostAddress(Integer.toString(indVal[1]));
+                        int remotePort = pd.getPortNumber(Integer.toString(indVal[1]));
+                        clientSocket = new Socket(remoteAddress, remotePort);
                         InputStream io = clientSocket.getInputStream();
                         OutputStream oo = clientSocket.getOutputStream();
                         oo.write(requestMsg);
 
-                        peer.socketMap.put(Integer.toString(peerId), oo);
-                        //}
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -252,6 +291,26 @@ public class ThreadCreation {
                     }
                 }
             }
+            msg.convertMessageLength(5);
+            msg.convertMessageType(4);
+            msg.addMessagePayload(peer.convertIndexToBytes(ind));
+            byte[] haveMsg = msg.getMessage(Integer.parseInt(id));
+            peer.handShakeMap.forEach((key, value) ->
+                    {
+                        try {
+                            GetPeerDetails pd = new GetPeerDetails();
+                            String remoteAddress = pd.getHostAddress(key);
+                            int remotePort = pd.getPortNumber(key);
+                            clientSocket = new Socket(remoteAddress, remotePort);
+                            InputStream io = clientSocket.getInputStream();
+                            OutputStream oo = clientSocket.getOutputStream();
+                            oo.write(haveMsg);
+
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+            );
 
         }
         private static void requestMsgProcess(ArrayList<Integer> arr, Message msg, int peerId) {
@@ -284,9 +343,6 @@ public class ThreadCreation {
                 InputStream io = clientSocket.getInputStream();
                 OutputStream oo = clientSocket.getOutputStream();
                 oo.write(pieceMessage);
-
-                peer.socketMap.put(Integer.toString(peerId), oo);
-
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -295,27 +351,25 @@ public class ThreadCreation {
         private static void unChokeMsgProcess(ArrayList<Integer> arr, Message msg, int peerId) {
             logger.unchoking(Integer.parseInt(id), peerId);
             peer.addNeighborsWhoUnchokedMe(peerId);
-            int ind = peer.getPieceToRequest(peerId);
-            if (ind != -1) {
+            int[] indVal = peer.getPieceToRequest(peerId);
+            if (indVal[0] != -1) {
                 byte[] bytes = new byte[4];
-                bytes[0] = (byte) ((ind >> 24) & 0xFF);
-                bytes[1] = (byte) ((ind >> 16) & 0xFF);
-                bytes[2] = (byte) ((ind >> 8) & 0xFF);
-                bytes[3] = (byte) (ind & 0xFF);
+                bytes[0] = (byte) ((indVal[0] >> 24) & 0xFF);
+                bytes[1] = (byte) ((indVal[0] >> 16) & 0xFF);
+                bytes[2] = (byte) ((indVal[0] >> 8) & 0xFF);
+                bytes[3] = (byte) (indVal[0] & 0xFF);
                 msg.convertMessageLength(5);
                 msg.convertMessageType(6);
                 msg.addMessagePayload(bytes);
                 byte[] requestMsg = msg.getMessage(Integer.parseInt(id));
                 try {
                     GetPeerDetails pd = new GetPeerDetails();
-                    String remoteAddress = pd.getHostAddress(Integer.toString(peerId));
-                    int remotePort = pd.getPortNumber(Integer.toString(peerId));
+                    String remoteAddress = pd.getHostAddress(Integer.toString(indVal[1]));
+                    int remotePort = pd.getPortNumber(Integer.toString(indVal[1]));
                     clientSocket = new Socket(remoteAddress, remotePort);
                     InputStream io = clientSocket.getInputStream();
                     OutputStream oo = clientSocket.getOutputStream();
                     oo.write(requestMsg);
-
-                    peer.socketMap.put(Integer.toString(peerId), oo);
 
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -333,8 +387,6 @@ public class ThreadCreation {
                     InputStream io = clientSocket.getInputStream();
                     OutputStream oo = clientSocket.getOutputStream();
                     oo.write(notInterestedMsg);
-
-                    peer.socketMap.put(Integer.toString(peerId), oo);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -371,8 +423,6 @@ public class ThreadCreation {
                     InputStream io = clientSocket.getInputStream();
                     OutputStream oo = clientSocket.getOutputStream();
                     oo.write(bitFieldMsg);
-                    peer.socketMap.put(Integer.toString(peerId), oo);
-
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -391,7 +441,7 @@ public class ThreadCreation {
                     InputStream io = clientSocket.getInputStream();
                     OutputStream oo = clientSocket.getOutputStream();
                     oo.write(interested);
-                    peer.socketMap.put(Integer.toString(peerId), oo);
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -446,9 +496,6 @@ public class ThreadCreation {
                                 InputStream io = clientSocket.getInputStream();
                                 OutputStream oo = clientSocket.getOutputStream();
                                 oo.write(unChokeMessage);
-
-                                peer.socketMap.put(key, oo);
-                                //}
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
@@ -465,13 +512,6 @@ public class ThreadCreation {
                         unPreferredNeighbors[unInd[0]] = Integer.parseInt(key);
                         unInd[0] = unInd[0] + 1;
                         try {
-//                            if(peer.socketMap.containsKey(key)){
-//                                System.out.println(peer.socketMap);
-//                                OutputStream oo = peer.socketMap.get(key);
-//                                oo.write(unChokeMessage);
-//
-//                            }
-//                            else {
                             GetPeerDetails pd = new GetPeerDetails();
                             String remoteAddress = pd.getHostAddress(key);
                             int remotePort = pd.getPortNumber(key);
@@ -480,7 +520,7 @@ public class ThreadCreation {
                             OutputStream oo = clientSocket.getOutputStream();
                             oo.write(chokeMessage);
 
-                            peer.socketMap.put(key, oo);
+
                             //}
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -519,7 +559,6 @@ public class ThreadCreation {
         }
     }
 }
-
 
 
 

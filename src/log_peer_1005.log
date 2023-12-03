@@ -1,285 +1,335 @@
-2023-12-02 04:07:26 1005 makes connection with 1001.
-2023-12-02 04:07:26 1005 makes connection with 1002.
-2023-12-02 04:07:26 1001 is connected from Peer 1005
-2023-12-02 04:07:26 1005 makes connection with 1003.
-2023-12-02 04:07:26 1005 makes connection with 1004.
-2023-12-02 04:07:26 1005 makes connection with 1001.
-2023-12-02 04:07:26 1003 is connected from Peer 1005
-2023-12-02 04:07:26 1005 makes connection with 1003.
-2023-12-02 04:07:27 1004 is connected from Peer 1005
-2023-12-02 04:07:27 1005 makes connection with 1004.
-2023-12-02 04:07:27 1006 is connected from Peer 1005
-2023-12-02 04:07:27 1002 is connected from Peer 1005
-2023-12-02 04:07:27 1005 makes connection with 1002.
-2023-12-02 04:07:27 1005 is unchoked by 1003.
-2023-12-02 04:07:27 1005 is unchoked by 1001.
-2023-12-02 04:07:27 1005 is unchoked by 1002.
-2023-12-02 04:07:27 1005 is unchoked by 1004.
-2023-12-02 04:07:28 1005 has the preferred neighbors 1006, 1003, 1002.
-2023-12-02 04:07:28 1005 has the optimistically unchoked neighbor 1001.
-2023-12-02 04:07:28 1005 has downloaded the piece 0 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 is choked by 1006.
-2023-12-02 04:07:28 1005 has downloaded the piece 1 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 2 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 3 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 4 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 5 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 6 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 7 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 8 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 9 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 10 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 11 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 12 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 13 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 14 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 15 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 16 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 17 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 18 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 19 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 20 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 21 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 22 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 23 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 24 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 25 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 26 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 27 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 28 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 29 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 30 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 31 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 32 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 33 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 34 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 35 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 36 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 37 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 38 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 39 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 40 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 41 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 42 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 43 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 44 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 45 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:28 1005 has downloaded the piece 46 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 47 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 48 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 49 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 50 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 51 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 52 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 53 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 54 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 55 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 56 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 57 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 58 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 59 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 60 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 61 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 62 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 63 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 64 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 65 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 66 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 67 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 68 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 69 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 70 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 71 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 72 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 73 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 74 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 75 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 76 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 77 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 78 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 79 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 80 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 81 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 82 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 83 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 84 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 85 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 86 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 87 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 88 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 89 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 90 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 91 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 92 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 93 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 94 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 95 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 96 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 97 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:29 1005 has downloaded the piece 98 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 99 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 100 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 101 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 102 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 103 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 104 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 105 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 106 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 107 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 108 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 109 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 110 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 111 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 112 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 113 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 114 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 115 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 116 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 117 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 118 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 119 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 120 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 121 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 122 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 123 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 124 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 125 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 126 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 127 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 128 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 129 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 130 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 131 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 132 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 133 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 134 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 135 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 136 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 137 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 138 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 139 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 140 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 141 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 142 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 143 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 144 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 145 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 146 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 147 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 148 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 149 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 150 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 151 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:30 1005 has downloaded the piece 152 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 153 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 154 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 155 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 156 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 157 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 158 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 159 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 160 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 161 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 162 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 163 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 164 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 165 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 166 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 167 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 168 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 169 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 170 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 171 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 172 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 173 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 174 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 175 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 176 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 177 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 178 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 179 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 180 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 181 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 182 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 183 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:31 1005 has downloaded the piece 184 from 1001. Now the number of pieces it has is0.
-2023-12-02 04:07:32 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:07:32 1005 is unchoked by 1002.
-2023-12-02 04:07:32 1005 is unchoked by 1002.
-2023-12-02 04:07:32 1005 is unchoked by 1001.
-2023-12-02 04:07:32 1005 is choked by 1006.
-2023-12-02 04:07:32 1005 is unchoked by 1003.
-2023-12-02 04:07:32 1005 is unchoked by 1004.
-2023-12-02 04:07:37 1005 is unchoked by 1001.
-2023-12-02 04:07:37 1005 is unchoked by 1002.
-2023-12-02 04:07:37 1005 is unchoked by 1004.
-2023-12-02 04:07:37 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:07:37 1005 is choked by 1006.
-2023-12-02 04:07:37 1005 is unchoked by 1003.
-2023-12-02 04:07:37 1005 has the optimistically unchoked neighbor 1003.
-2023-12-02 04:07:42 1005 is unchoked by 1001.
-2023-12-02 04:07:42 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:07:42 1005 is unchoked by 1003.
-2023-12-02 04:07:42 1005 is unchoked by 1004.
-2023-12-02 04:07:42 1005 is unchoked by 1002.
-2023-12-02 04:07:42 1005 is choked by 1006.
-2023-12-02 04:07:47 1005 is unchoked by 1002.
-2023-12-02 04:07:47 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:07:47 1005 is unchoked by 1001.
-2023-12-02 04:07:47 1005 is unchoked by 1004.
-2023-12-02 04:07:47 1005 is unchoked by 1003.
-2023-12-02 04:07:47 1005 is choked by 1006.
-2023-12-02 04:07:47 1005 has the optimistically unchoked neighbor 1003.
-2023-12-02 04:07:52 1005 is unchoked by 1001.
-2023-12-02 04:07:52 1005 is unchoked by 1003.
-2023-12-02 04:07:52 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:07:52 1005 is unchoked by 1002.
-2023-12-02 04:07:52 1005 is choked by 1006.
-2023-12-02 04:07:52 1005 is unchoked by 1004.
-2023-12-02 04:07:57 1005 is unchoked by 1002.
-2023-12-02 04:07:57 1005 is unchoked by 1001.
-2023-12-02 04:07:57 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:07:57 1005 is unchoked by 1004.
-2023-12-02 04:07:57 1005 has the optimistically unchoked neighbor 1004.
-2023-12-02 04:07:57 1005 is unchoked by 1003.
-2023-12-02 04:07:57 1005 is choked by 1006.
-2023-12-02 04:07:57 1005 is unchoked by 1006.
-2023-12-02 04:08:02 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:08:02 1005 is choked by 1006.
-2023-12-02 04:08:02 1005 is unchoked by 1003.
-2023-12-02 04:08:02 1005 is unchoked by 1002.
-2023-12-02 04:08:02 1005 is unchoked by 1001.
-2023-12-02 04:08:02 1005 is unchoked by 1004.
-2023-12-02 04:08:07 1005 is unchoked by 1001.
-2023-12-02 04:08:07 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:08:07 1005 has the optimistically unchoked neighbor 1004.
-2023-12-02 04:08:07 1005 is choked by 1006.
-2023-12-02 04:08:12 1005 is choked by 1006.
-2023-12-02 04:08:17 1005 is choked by 1006.
-2023-12-02 04:08:22 1005 is choked by 1006.
-2023-12-02 04:08:27 1005 is choked by 1006.
-2023-12-02 04:08:32 1005 is choked by 1006.
-2023-12-02 04:08:37 1005 is choked by 1006.
-2023-12-02 04:08:37 1005 is unchoked by 1006.
-2023-12-02 04:09:52 1005 is choked by 1006.
-2023-12-02 04:09:52 1005 is choked by 1006.
-2023-12-02 04:09:52 1005 is unchoked by 1006.
-2023-12-02 04:10:42 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:11:07 1005 is choked by 1006.
-2023-12-02 04:11:07 1005 is choked by 1006.
-2023-12-02 04:11:07 1005 is unchoked by 1004.
-2023-12-02 04:11:07 1005 is unchoked by 1002.
-2023-12-02 04:12:22 1005 is unchoked by 1003.
-2023-12-02 04:12:22 1005 is unchoked by 1001.
-2023-12-02 04:12:22 1005 is choked by 1006.
-2023-12-02 04:12:22 1005 is unchoked by 1002.
-2023-12-02 04:13:12 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:13:12 1005 has the optimistically unchoked neighbor 1004.
-2023-12-02 04:13:37 1005 is choked by 1006.
-2023-12-02 04:13:37 1005 is unchoked by 1006.
-2023-12-02 04:14:52 1005 is unchoked by 1002.
-2023-12-02 04:16:07 1005 is unchoked by 1001.
-2023-12-02 04:16:57 1005 has the preferred neighbors 1006, 1002, 1001.
-2023-12-02 04:17:22 1005 is choked by 1006.
-2023-12-02 04:17:22 1005 is unchoked by 1004.
-2023-12-02 04:18:37 1005 is unchoked by 1003.
+2023-12-03 05:30:57 1005 makes connection with 1001.
+2023-12-03 05:30:57 1001 is connected from Peer 1005
+2023-12-03 05:30:57 1005 makes connection with 1002.
+2023-12-03 05:30:57 1005 makes connection with 1003.
+2023-12-03 05:30:57 1005 makes connection with 1004.
+2023-12-03 05:30:57 1005 makes connection with 1001.
+2023-12-03 05:30:57 1003 is connected from Peer 1005
+2023-12-03 05:30:57 1005 makes connection with 1003.
+2023-12-03 05:30:57 1002 is connected from Peer 1005
+2023-12-03 05:30:57 1005 makes connection with 1002.
+2023-12-03 05:30:57 1004 is connected from Peer 1005
+2023-12-03 05:30:57 1005 makes connection with 1004.
+2023-12-03 05:31:06 1006 is connected from Peer 1005
+2023-12-03 05:31:07 1005 is unchoked by 1006.
+2023-12-03 05:31:07 1004 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:07 1003 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:07 1005 is unchoked by 1002.
+2023-12-03 05:31:07 1006 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:07 1005 is unchoked by 1004.
+2023-12-03 05:31:07 1005 is unchoked by 1001.
+2023-12-03 05:31:07 1005 has the preferred neighbors 1006, 1004, 1003.
+2023-12-03 05:31:07 1005 has the optimistically unchoked neighbor 1001.
+2023-12-03 05:31:07 1005 has downloaded the piece 0 from 1001. Now the number of pieces it has is 1.
+2023-12-03 05:31:07 1005 is unchoked by 1003.
+2023-12-03 05:31:07 1001 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:08 1005 has downloaded the piece 1 from 1001. Now the number of pieces it has is 2.
+2023-12-03 05:31:08 1005 has downloaded the piece 2 from 1003. Now the number of pieces it has is 3.
+2023-12-03 05:31:08 1005 received the ‘have’ message from 1002 for the piece 0.
+2023-12-03 05:31:08 1005 received the ‘have’ message from 1004 for the piece 0.
+2023-12-03 05:31:08 1005 received the ‘have’ message from 1002 for the piece 1.
+2023-12-03 05:31:08 1005 received the ‘have’ message from 1004 for the piece 1.
+2023-12-03 05:31:09 1005 has downloaded the piece 3 from 1003. Now the number of pieces it has is 4.
+2023-12-03 05:31:09 1005 received the ‘have’ message from 1002 for the piece 2.
+2023-12-03 05:31:09 1005 has downloaded the piece 4 from 1003. Now the number of pieces it has is 5.
+2023-12-03 05:31:09 1005 received the ‘have’ message from 1004 for the piece 2.
+2023-12-03 05:31:09 1005 received the ‘have’ message from 1004 for the piece 3.
+2023-12-03 05:31:09 1005 received the ‘have’ message from 1002 for the piece 3.
+2023-12-03 05:31:10 1005 has downloaded the piece 5 from 1003. Now the number of pieces it has is 6.
+2023-12-03 05:31:10 1005 received the ‘have’ message from 1002 for the piece 4.
+2023-12-03 05:31:10 1005 received the ‘have’ message from 1004 for the piece 4.
+2023-12-03 05:31:10 1005 has downloaded the piece 6 from 1003. Now the number of pieces it has is 7.
+2023-12-03 05:31:10 1005 received the ‘have’ message from 1002 for the piece 5.
+2023-12-03 05:31:10 1005 received the ‘have’ message from 1004 for the piece 5.
+2023-12-03 05:31:10 1005 has downloaded the piece 7 from 1001. Now the number of pieces it has is 8.
+2023-12-03 05:31:10 1005 received the ‘have’ message from 1002 for the piece 6.
+2023-12-03 05:31:10 1005 received the ‘have’ message from 1004 for the piece 6.
+2023-12-03 05:31:11 1005 has downloaded the piece 8 from 1003. Now the number of pieces it has is 9.
+2023-12-03 05:31:11 1005 received the ‘have’ message from 1002 for the piece 7.
+2023-12-03 05:31:11 1005 received the ‘have’ message from 1004 for the piece 7.
+2023-12-03 05:31:11 1005 has downloaded the piece 9 from 1001. Now the number of pieces it has is 10.
+2023-12-03 05:31:11 1005 received the ‘have’ message from 1002 for the piece 8.
+2023-12-03 05:31:11 1005 received the ‘have’ message from 1004 for the piece 8.
+2023-12-03 05:31:11 1005 has downloaded the piece 10 from 1003. Now the number of pieces it has is 11.
+2023-12-03 05:31:11 1005 received the ‘have’ message from 1002 for the piece 9.
+2023-12-03 05:31:11 1005 received the ‘have’ message from 1004 for the piece 9.
+2023-12-03 05:31:12 1005 has the preferred neighbors 1006, 1003, 1001.
+2023-12-03 05:31:12 1005 has downloaded the piece 11 from 1001. Now the number of pieces it has is 12.
+2023-12-03 05:31:12 1005 received the ‘have’ message from 1002 for the piece 10.
+2023-12-03 05:31:12 1005 received the ‘have’ message from 1004 for the piece 10.
+2023-12-03 05:31:12 1005 has downloaded the piece 12 from 1003. Now the number of pieces it has is 13.
+2023-12-03 05:31:12 1005 is unchoked by 1006.
+2023-12-03 05:31:12 1005 is unchoked by 1001.
+2023-12-03 05:31:12 1005 is unchoked by 1003.
+2023-12-03 05:31:12 1005 is unchoked by 1002.
+2023-12-03 05:31:12 1005 is unchoked by 1004.
+2023-12-03 05:31:12 1003 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:12 1001 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:12 1005 received the ‘have’ message from 1002 for the piece 11.
+2023-12-03 05:31:12 1005 received the ‘have’ message from 1004 for the piece 11.
+2023-12-03 05:31:12 1005 has downloaded the piece 13 from 1003. Now the number of pieces it has is 14.
+2023-12-03 05:31:12 1005 received the ‘have’ message from 1002 for the piece 12.
+2023-12-03 05:31:12 1005 received the ‘have’ message from 1004 for the piece 12.
+2023-12-03 05:31:13 1005 has downloaded the piece 14 from 1001. Now the number of pieces it has is 15.
+2023-12-03 05:31:13 1005 has downloaded the piece 15 from 1001. Now the number of pieces it has is 16.
+2023-12-03 05:31:13 1005 has downloaded the piece 16 from 1001. Now the number of pieces it has is 17.
+2023-12-03 05:31:14 1005 has downloaded the piece 17 from 1001. Now the number of pieces it has is 18.
+2023-12-03 05:31:14 1005 has downloaded the piece 18 from 1001. Now the number of pieces it has is 19.
+2023-12-03 05:31:14 1005 has downloaded the piece 19 from 1003. Now the number of pieces it has is 20.
+2023-12-03 05:31:14 1005 received the ‘have’ message from 1002 for the piece 13.
+2023-12-03 05:31:14 1005 received the ‘have’ message from 1004 for the piece 13.
+2023-12-03 05:31:15 1005 has downloaded the piece 20 from 1001. Now the number of pieces it has is 21.
+2023-12-03 05:31:15 1005 received the ‘have’ message from 1002 for the piece 14.
+2023-12-03 05:31:15 1005 received the ‘have’ message from 1004 for the piece 14.
+2023-12-03 05:31:15 1005 has downloaded the piece 21 from 1003. Now the number of pieces it has is 22.
+2023-12-03 05:31:15 1005 received the ‘have’ message from 1002 for the piece 15.
+2023-12-03 05:31:15 1005 received the ‘have’ message from 1004 for the piece 15.
+2023-12-03 05:31:15 1005 has downloaded the piece 22 from 1001. Now the number of pieces it has is 23.
+2023-12-03 05:31:15 1005 received the ‘have’ message from 1002 for the piece 16.
+2023-12-03 05:31:15 1005 received the ‘have’ message from 1004 for the piece 16.
+2023-12-03 05:31:16 1005 has downloaded the piece 23 from 1001. Now the number of pieces it has is 24.
+2023-12-03 05:31:16 1005 received the ‘have’ message from 1002 for the piece 17.
+2023-12-03 05:31:16 1005 received the ‘have’ message from 1004 for the piece 17.
+2023-12-03 05:31:16 1005 has downloaded the piece 24 from 1003. Now the number of pieces it has is 25.
+2023-12-03 05:31:16 1005 received the ‘have’ message from 1002 for the piece 18.
+2023-12-03 05:31:16 1005 received the ‘have’ message from 1004 for the piece 18.
+2023-12-03 05:31:17 1005 has the preferred neighbors 1006, 1003, 1001.
+2023-12-03 05:31:17 1005 has the optimistically unchoked neighbor 1004.
+2023-12-03 05:31:17 1005 has downloaded the piece 25 from 1003. Now the number of pieces it has is 26.
+2023-12-03 05:31:17 1005 received the ‘have’ message from 1002 for the piece 19.
+2023-12-03 05:31:17 1005 received the ‘have’ message from 1004 for the piece 19.
+2023-12-03 05:31:17 1005 has downloaded the piece 26 from 1001. Now the number of pieces it has is 27.
+2023-12-03 05:31:17 1005 received the ‘have’ message from 1002 for the piece 20.
+2023-12-03 05:31:18 1005 has downloaded the piece 27 from 1003. Now the number of pieces it has is 28.
+2023-12-03 05:31:18 1005 received the ‘have’ message from 1004 for the piece 20.
+2023-12-03 05:31:18 1005 received the ‘have’ message from 1002 for the piece 21.
+2023-12-03 05:31:18 1005 has downloaded the piece 28 from 1001. Now the number of pieces it has is 29.
+2023-12-03 05:31:18 1005 received the ‘have’ message from 1004 for the piece 21.
+2023-12-03 05:31:18 1005 received the ‘have’ message from 1002 for the piece 22.
+2023-12-03 05:31:19 1005 has downloaded the piece 29 from 1003. Now the number of pieces it has is 30.
+2023-12-03 05:31:19 1005 received the ‘have’ message from 1004 for the piece 22.
+2023-12-03 05:31:19 1005 received the ‘have’ message from 1002 for the piece 23.
+2023-12-03 05:31:19 1005 received the ‘have’ message from 1004 for the piece 23.
+2023-12-03 05:31:19 1005 has downloaded the piece 30 from 1003. Now the number of pieces it has is 31.
+2023-12-03 05:31:19 1005 received the ‘have’ message from 1002 for the piece 24.
+2023-12-03 05:31:19 1005 has downloaded the piece 31 from 1001. Now the number of pieces it has is 32.
+2023-12-03 05:31:19 1005 received the ‘have’ message from 1004 for the piece 24.
+2023-12-03 05:31:19 1005 is unchoked by 1002.
+2023-12-03 05:31:19 1005 is unchoked by 1001.
+2023-12-03 05:31:19 1005 is unchoked by 1006.
+2023-12-03 05:31:19 1005 is unchoked by 1004.
+2023-12-03 05:31:19 1005 is unchoked by 1003.
+2023-12-03 05:31:19 1001 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:19 1003 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:19 1005 received the ‘have’ message from 1002 for the piece 25.
+2023-12-03 05:31:20 1005 has downloaded the piece 32 from 1003. Now the number of pieces it has is 33.
+2023-12-03 05:31:20 1005 received the ‘have’ message from 1004 for the piece 25.
+2023-12-03 05:31:20 1005 received the ‘have’ message from 1002 for the piece 26.
+2023-12-03 05:31:20 1005 has downloaded the piece 33 from 1003. Now the number of pieces it has is 34.
+2023-12-03 05:31:20 1005 received the ‘have’ message from 1004 for the piece 26.
+2023-12-03 05:31:20 1005 received the ‘have’ message from 1002 for the piece 27.
+2023-12-03 05:31:21 1005 has downloaded the piece 34 from 1001. Now the number of pieces it has is 35.
+2023-12-03 05:31:21 1005 received the ‘have’ message from 1004 for the piece 27.
+2023-12-03 05:31:21 1005 received the ‘have’ message from 1002 for the piece 28.
+2023-12-03 05:31:21 1005 has downloaded the piece 35 from 1003. Now the number of pieces it has is 36.
+2023-12-03 05:31:21 1005 received the ‘have’ message from 1004 for the piece 28.
+2023-12-03 05:31:21 1005 received the ‘have’ message from 1002 for the piece 29.
+2023-12-03 05:31:22 1005 has the preferred neighbors 1006, 1003, 1001.
+2023-12-03 05:31:22 1005 has downloaded the piece 36 from 1003. Now the number of pieces it has is 37.
+2023-12-03 05:31:22 1005 received the ‘have’ message from 1004 for the piece 29.
+2023-12-03 05:31:22 1005 received the ‘have’ message from 1002 for the piece 30.
+2023-12-03 05:31:22 1005 has downloaded the piece 37 from 1001. Now the number of pieces it has is 38.
+2023-12-03 05:31:22 1005 received the ‘have’ message from 1004 for the piece 30.
+2023-12-03 05:31:22 1005 received the ‘have’ message from 1002 for the piece 31.
+2023-12-03 05:31:22 1005 has downloaded the piece 38 from 1001. Now the number of pieces it has is 39.
+2023-12-03 05:31:23 1005 has downloaded the piece 39 from 1001. Now the number of pieces it has is 40.
+2023-12-03 05:31:23 1005 has downloaded the piece 41 from 1001. Now the number of pieces it has is 41.
+2023-12-03 05:31:23 1005 has downloaded the piece 43 from 1001. Now the number of pieces it has is 42.
+2023-12-03 05:31:24 1005 has downloaded the piece 40 from 1003. Now the number of pieces it has is 43.
+2023-12-03 05:31:24 1005 has downloaded the piece 42 from 1003. Now the number of pieces it has is 44.
+2023-12-03 05:31:24 1005 received the ‘have’ message from 1004 for the piece 31.
+2023-12-03 05:31:24 1005 received the ‘have’ message from 1002 for the piece 32.
+2023-12-03 05:31:24 1005 has downloaded the piece 44 from 1003. Now the number of pieces it has is 45.
+2023-12-03 05:31:24 1005 received the ‘have’ message from 1004 for the piece 32.
+2023-12-03 05:31:25 1005 has downloaded the piece 45 from 1003. Now the number of pieces it has is 46.
+2023-12-03 05:31:25 1005 received the ‘have’ message from 1002 for the piece 33.
+2023-12-03 05:31:25 1005 received the ‘have’ message from 1004 for the piece 33.
+2023-12-03 05:31:25 1005 has downloaded the piece 46 from 1001. Now the number of pieces it has is 47.
+2023-12-03 05:31:25 1005 received the ‘have’ message from 1002 for the piece 34.
+2023-12-03 05:31:25 1005 received the ‘have’ message from 1004 for the piece 34.
+2023-12-03 05:31:25 1005 has downloaded the piece 47 from 1003. Now the number of pieces it has is 48.
+2023-12-03 05:31:25 1005 received the ‘have’ message from 1002 for the piece 35.
+2023-12-03 05:31:25 1005 received the ‘have’ message from 1004 for the piece 35.
+2023-12-03 05:31:25 1005 is unchoked by 1002.
+2023-12-03 05:31:25 1005 is unchoked by 1001.
+2023-12-03 05:31:25 1005 is unchoked by 1006.
+2023-12-03 05:31:25 1005 is unchoked by 1004.
+2023-12-03 05:31:25 1005 is unchoked by 1003.
+2023-12-03 05:31:25 1001 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:25 1003 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:26 1005 has downloaded the piece 48 from 1003. Now the number of pieces it has is 49.
+2023-12-03 05:31:26 1005 received the ‘have’ message from 1002 for the piece 36.
+2023-12-03 05:31:26 1005 received the ‘have’ message from 1004 for the piece 36.
+2023-12-03 05:31:26 1005 has downloaded the piece 49 from 1001. Now the number of pieces it has is 50.
+2023-12-03 05:31:26 1005 received the ‘have’ message from 1002 for the piece 37.
+2023-12-03 05:31:26 1005 received the ‘have’ message from 1004 for the piece 37.
+2023-12-03 05:31:26 1005 has downloaded the piece 50 from 1001. Now the number of pieces it has is 51.
+2023-12-03 05:31:26 1005 received the ‘have’ message from 1002 for the piece 38.
+2023-12-03 05:31:26 1005 received the ‘have’ message from 1004 for the piece 38.
+2023-12-03 05:31:27 1005 has the preferred neighbors 1006, 1003, 1001.
+2023-12-03 05:31:27 1005 has the optimistically unchoked neighbor 1004.
+2023-12-03 05:31:27 1005 has downloaded the piece 51 from 1003. Now the number of pieces it has is 52.
+2023-12-03 05:31:27 1005 received the ‘have’ message from 1002 for the piece 39.
+2023-12-03 05:31:27 1005 received the ‘have’ message from 1004 for the piece 39.
+2023-12-03 05:31:27 1005 has downloaded the piece 52 from 1001. Now the number of pieces it has is 53.
+2023-12-03 05:31:27 1005 received the ‘have’ message from 1002 for the piece 40.
+2023-12-03 05:31:27 1005 received the ‘have’ message from 1004 for the piece 40.
+2023-12-03 05:31:27 1005 has downloaded the piece 53 from 1003. Now the number of pieces it has is 54.
+2023-12-03 05:31:27 1005 received the ‘have’ message from 1002 for the piece 41.
+2023-12-03 05:31:27 1005 received the ‘have’ message from 1004 for the piece 41.
+2023-12-03 05:31:28 1005 has downloaded the piece 54 from 1003. Now the number of pieces it has is 55.
+2023-12-03 05:31:28 1005 received the ‘have’ message from 1002 for the piece 42.
+2023-12-03 05:31:28 1005 received the ‘have’ message from 1004 for the piece 42.
+2023-12-03 05:31:28 1005 has downloaded the piece 55 from 1001. Now the number of pieces it has is 56.
+2023-12-03 05:31:28 1005 received the ‘have’ message from 1002 for the piece 43.
+2023-12-03 05:31:28 1005 received the ‘have’ message from 1004 for the piece 43.
+2023-12-03 05:31:28 1005 has downloaded the piece 56 from 1001. Now the number of pieces it has is 57.
+2023-12-03 05:31:29 1005 received the ‘have’ message from 1002 for the piece 44.
+2023-12-03 05:31:29 1005 received the ‘have’ message from 1004 for the piece 44.
+2023-12-03 05:31:30 1005 has downloaded the piece 57 from 1001. Now the number of pieces it has is 58.
+2023-12-03 05:31:30 1005 received the ‘have’ message from 1002 for the piece 45.
+2023-12-03 05:31:30 1005 received the ‘have’ message from 1004 for the piece 45.
+2023-12-03 05:31:30 1005 has downloaded the piece 58 from 1001. Now the number of pieces it has is 59.
+2023-12-03 05:31:30 1005 received the ‘have’ message from 1002 for the piece 46.
+2023-12-03 05:31:30 1005 received the ‘have’ message from 1004 for the piece 46.
+2023-12-03 05:31:30 1005 has downloaded the piece 59 from 1001. Now the number of pieces it has is 60.
+2023-12-03 05:31:31 1005 has downloaded the piece 60 from 1003. Now the number of pieces it has is 61.
+2023-12-03 05:31:31 1005 has downloaded the piece 61 from 1003. Now the number of pieces it has is 62.
+2023-12-03 05:31:31 1005 has downloaded the piece 62 from 1001. Now the number of pieces it has is 63.
+2023-12-03 05:31:31 1005 has downloaded the piece 63 from 1003. Now the number of pieces it has is 64.
+2023-12-03 05:31:31 1005 has downloaded the piece 64 from 1001. Now the number of pieces it has is 65.
+2023-12-03 05:31:31 1005 received the ‘have’ message from 1002 for the piece 47.
+2023-12-03 05:31:31 1005 received the ‘have’ message from 1004 for the piece 47.
+2023-12-03 05:31:32 1005 has the preferred neighbors 1006, 1003, 1001.
+2023-12-03 05:31:32 1005 has downloaded the piece 65 from 1003. Now the number of pieces it has is 66.
+2023-12-03 05:31:32 1005 received the ‘have’ message from 1002 for the piece 48.
+2023-12-03 05:31:32 1005 received the ‘have’ message from 1004 for the piece 48.
+2023-12-03 05:31:32 1005 has downloaded the piece 66 from 1003. Now the number of pieces it has is 67.
+2023-12-03 05:31:32 1005 received the ‘have’ message from 1002 for the piece 49.
+2023-12-03 05:31:32 1005 received the ‘have’ message from 1004 for the piece 49.
+2023-12-03 05:31:32 1005 has downloaded the piece 67 from 1003. Now the number of pieces it has is 68.
+2023-12-03 05:31:32 1005 received the ‘have’ message from 1002 for the piece 50.
+2023-12-03 05:31:32 1005 received the ‘have’ message from 1004 for the piece 50.
+2023-12-03 05:31:32 1005 is unchoked by 1001.
+2023-12-03 05:31:32 1005 is unchoked by 1004.
+2023-12-03 05:31:32 1005 is unchoked by 1006.
+2023-12-03 05:31:32 1005 is unchoked by 1002.
+2023-12-03 05:31:32 1005 is unchoked by 1003.
+2023-12-03 05:31:32 1003 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:32 1001 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:33 1005 has downloaded the piece 68 from 1001. Now the number of pieces it has is 69.
+2023-12-03 05:31:33 1005 received the ‘have’ message from 1002 for the piece 51.
+2023-12-03 05:31:33 1005 received the ‘have’ message from 1004 for the piece 51.
+2023-12-03 05:31:33 1005 has downloaded the piece 69 from 1003. Now the number of pieces it has is 70.
+2023-12-03 05:31:33 1005 received the ‘have’ message from 1002 for the piece 52.
+2023-12-03 05:31:33 1005 received the ‘have’ message from 1004 for the piece 52.
+2023-12-03 05:31:33 1005 has downloaded the piece 70 from 1003. Now the number of pieces it has is 71.
+2023-12-03 05:31:33 1005 received the ‘have’ message from 1004 for the piece 53.
+2023-12-03 05:31:33 1005 received the ‘have’ message from 1002 for the piece 53.
+2023-12-03 05:31:33 1005 has downloaded the piece 71 from 1003. Now the number of pieces it has is 72.
+2023-12-03 05:31:33 1005 received the ‘have’ message from 1004 for the piece 54.
+2023-12-03 05:31:33 1005 received the ‘have’ message from 1002 for the piece 54.
+2023-12-03 05:31:33 1005 has downloaded the piece 72 from 1003. Now the number of pieces it has is 73.
+2023-12-03 05:31:34 1005 has downloaded the piece 73 from 1001. Now the number of pieces it has is 74.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1004 for the piece 55.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1002 for the piece 55.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1004 for the piece 56.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1002 for the piece 56.
+2023-12-03 05:31:35 1005 has downloaded the piece 74 from 1001. Now the number of pieces it has is 75.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1004 for the piece 57.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1002 for the piece 57.
+2023-12-03 05:31:35 1005 has downloaded the piece 75 from 1001. Now the number of pieces it has is 76.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1004 for the piece 58.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1002 for the piece 58.
+2023-12-03 05:31:35 1005 has downloaded the piece 76 from 1003. Now the number of pieces it has is 77.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1004 for the piece 59.
+2023-12-03 05:31:35 1005 received the ‘have’ message from 1002 for the piece 59.
+2023-12-03 05:31:36 1005 has downloaded the piece 77 from 1001. Now the number of pieces it has is 78.
+2023-12-03 05:31:36 1005 received the ‘have’ message from 1004 for the piece 60.
+2023-12-03 05:31:36 1005 has downloaded the piece 78 from 1001. Now the number of pieces it has is 79.
+2023-12-03 05:31:36 1005 has downloaded the piece 79 from 1003. Now the number of pieces it has is 80.
+2023-12-03 05:31:36 1005 has downloaded the piece 80 from 1003. Now the number of pieces it has is 81.
+2023-12-03 05:31:37 1005 has the preferred neighbors 1006, 1003, 1001.
+2023-12-03 05:31:37 1005 has the optimistically unchoked neighbor 1001.
+2023-12-03 05:31:37 1005 has downloaded the piece 81 from 1003. Now the number of pieces it has is 82.
+2023-12-03 05:31:37 1005 is unchoked by 1002.
+2023-12-03 05:31:37 1005 is unchoked by 1001.
+2023-12-03 05:31:37 1005 received the ‘have’ message from 1002 for the piece 60.
+2023-12-03 05:31:37 1005 received the ‘have’ message from 1004 for the piece 61.
+2023-12-03 05:31:37 1005 received the ‘have’ message from 1002 for the piece 61.
+2023-12-03 05:31:37 1005 received the ‘have’ message from 1004 for the piece 62.
+2023-12-03 05:31:37 1005 received the ‘have’ message from 1002 for the piece 62.
+2023-12-03 05:31:37 1005 received the ‘have’ message from 1004 for the piece 63.
+2023-12-03 05:31:37 1005 received the ‘have’ message from 1002 for the piece 63.
+2023-12-03 05:31:37 1001 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:37 1005 is unchoked by 1004.
+2023-12-03 05:31:37 1005 is unchoked by 1003.
+2023-12-03 05:31:37 1005 is unchoked by 1006.
+2023-12-03 05:31:37 1003 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:37 1005 has downloaded the piece 84 from 1001. Now the number of pieces it has is 83.
+2023-12-03 05:31:37 1005 has downloaded the piece 85 from 1001. Now the number of pieces it has is 84.
+2023-12-03 05:31:37 1005 has downloaded the piece 87 from 1001. Now the number of pieces it has is 85.
+2023-12-03 05:31:37 1005 has downloaded the piece 88 from 1001. Now the number of pieces it has is 86.
+2023-12-03 05:31:38 1005 has downloaded the piece 89 from 1001. Now the number of pieces it has is 87.
+2023-12-03 05:31:38 1005 received the ‘have’ message from 1002 for the piece 64.
+2023-12-03 05:31:38 1005 received the ‘have’ message from 1002 for the piece 65.
+2023-12-03 05:31:38 1005 received the ‘have’ message from 1002 for the piece 66.
+2023-12-03 05:31:38 1005 received the ‘have’ message from 1002 for the piece 67.
+2023-12-03 05:31:38 1005 has downloaded the piece 82 from 1003. Now the number of pieces it has is 88.
+2023-12-03 05:31:38 1005 has downloaded the piece 83 from 1003. Now the number of pieces it has is 89.
+2023-12-03 05:31:39 1005 has downloaded the piece 90 from 1001. Now the number of pieces it has is 90.
+2023-12-03 05:31:39 1005 has downloaded the piece 91 from 1001. Now the number of pieces it has is 91.
+2023-12-03 05:31:39 1005 has downloaded the piece 86 from 1003. Now the number of pieces it has is 92.
+2023-12-03 05:31:39 1005 received the ‘have’ message from 1002 for the piece 68.
+2023-12-03 05:31:39 1005 received the ‘have’ message from 1002 for the piece 70.
+2023-12-03 05:31:39 1005 received the ‘have’ message from 1002 for the piece 69.
+2023-12-03 05:31:39 1005 received the ‘have’ message from 1004 for the piece 64.
+2023-12-03 05:31:39 1005 received the ‘have’ message from 1004 for the piece 65.
+2023-12-03 05:31:39 1005 received the ‘have’ message from 1004 for the piece 66.
+2023-12-03 05:31:39 1005 received the ‘have’ message from 1002 for the piece 71.
+2023-12-03 05:31:39 1005 received the ‘have’ message from 1004 for the piece 67.
+2023-12-03 05:31:39 1005 has downloaded the piece 94 from 1001. Now the number of pieces it has is 93.
+2023-12-03 05:31:42 1005 has the preferred neighbors 1006, 1003, 1001.
+2023-12-03 05:31:42 1005 has downloaded the piece 96 from 1001. Now the number of pieces it has is 94.
+2023-12-03 05:31:42 1005 has downloaded the piece 98 from 1001. Now the number of pieces it has is 95.
+2023-12-03 05:31:43 1005 has downloaded the piece 92 from 1003. Now the number of pieces it has is 96.
+2023-12-03 05:31:43 1005 has downloaded the piece 93 from 1003. Now the number of pieces it has is 97.
+2023-12-03 05:31:43 1005 has downloaded the piece 95 from 1003. Now the number of pieces it has is 98.
+2023-12-03 05:31:43 1005 has downloaded the piece 97 from 1003. Now the number of pieces it has is 99.
+2023-12-03 05:31:43 1005 received the ‘have’ message from 1002 for the piece 73.
+2023-12-03 05:31:44 1005 has downloaded the piece 99 from 1001. Now the number of pieces it has is 100.
+2023-12-03 05:31:44 1005 received the ‘have’ message from 1004 for the piece 68.
+2023-12-03 05:31:44 1005 received the ‘have’ message from 1002 for the piece 72.
+2023-12-03 05:31:44 1005 has downloaded the piece 100 from 1003. Now the number of pieces it has is 101.
+2023-12-03 05:31:45 1005 has downloaded the piece 101 from 1003. Now the number of pieces it has is 102.
+2023-12-03 05:31:45 1005 has downloaded the piece 102 from 1003. Now the number of pieces it has is 103.
+2023-12-03 05:31:45 1005 received the ‘have’ message from 1004 for the piece 69.
+2023-12-03 05:31:45 1005 received the ‘have’ message from 1002 for the piece 76.
+2023-12-03 05:31:45 1005 received the ‘have’ message from 1004 for the piece 70.
+2023-12-03 05:31:45 1005 received the ‘have’ message from 1002 for the piece 78.
+2023-12-03 05:31:45 1005 is unchoked by 1001.
+2023-12-03 05:31:45 1005 is unchoked by 1002.
+2023-12-03 05:31:45 1005 is unchoked by 1006.
+2023-12-03 05:31:45 1005 is unchoked by 1003.
+2023-12-03 05:31:45 1003 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:45 1005 is unchoked by 1004.
+2023-12-03 05:31:45 1005 has downloaded the piece 103 from 1003. Now the number of pieces it has is 104.
+2023-12-03 05:31:45 1001 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:45 1005 has downloaded the piece 104 from 1003. Now the number of pieces it has is 105.
+2023-12-03 05:31:46 1005 has downloaded the piece 106 from 1003. Now the number of pieces it has is 106.
+2023-12-03 05:31:48 1005 has the preferred neighbors 1006, 1003, 1001.
+2023-12-03 05:31:48 1005 has downloaded the piece 108 from 1003. Now the number of pieces it has is 107.
+2023-12-03 05:31:48 1005 has downloaded the piece 110 from 1003. Now the number of pieces it has is 108.
+2023-12-03 05:31:48 1001 received the ‘not interested’ message from 1005.
+2023-12-03 05:31:48 1005 has downloaded the piece 105 from 1001. Now the number of pieces it has is 109.
+2023-12-03 05:31:48 1005 has downloaded the piece 107 from 1001. Now the number of pieces it has is 110.
