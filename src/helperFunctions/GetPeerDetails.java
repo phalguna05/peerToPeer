@@ -5,12 +5,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-// PeerInfo.cfg file read and to get peer info
+// This class is responsible for reading and storing details of peers from a configuration file
 public class GetPeerDetails {
     private static List<List<String>> linesAsWords = new ArrayList<>();
     public static void main(String args[]){}
+
+    // Method to read and initialize peer details from the configuration file
     public void initialize(){
             String fileName = "PeerInfo.cfg";
+
+            // Check if details are already loaded
             if(!(linesAsWords.size()>0)) {
                 try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
                     String line;
@@ -27,6 +31,8 @@ public class GetPeerDetails {
                 }
             }
     }
+
+    // Method to get the port number of a specific peer
     public int getPortNumber(String peerId){
         for (List<String> list : linesAsWords) {
             if(list.get(0).equals(peerId)){
@@ -36,10 +42,12 @@ public class GetPeerDetails {
         return 0;
     }
 
+    // Method to get all peer details
     public List<List<String>> getAllPeers(){
         return linesAsWords;
     }
 
+    // Method to get the host address of a specific peer
     public String getHostAddress(String peerId){
         for (List<String> list : linesAsWords) {
             if(list.get(0).equals(peerId)){
@@ -49,12 +57,15 @@ public class GetPeerDetails {
         return "None";
     }
 
+    // Method to get the ID of the initial peer
     public String getInitialPeerId(){
         if(linesAsWords.size()>0){
             return linesAsWords.get(0).get(0);
         }
         return "None";
     }
+
+    // Method to get the file status (has file or not) of a specific peer
     public int getFileStatus(String peerId){
         for (List<String> list : linesAsWords) {
             if(list.get(0).equals(peerId)){
@@ -64,6 +75,7 @@ public class GetPeerDetails {
         return 0;
     }
 
+    // Method to get the total number of peers
     public int getNumberOfPeers(){
         return linesAsWords.size();
     }

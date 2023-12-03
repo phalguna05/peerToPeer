@@ -1,8 +1,6 @@
 import java.net.*;
 import java.io.*;
 import java.lang.*;
-import java.net.Socket;
-import java.io.IOException;
 import java.util.ArrayList;
 
 import config.PeerInitialization;
@@ -13,39 +11,49 @@ import helperFunctions.GetPeerDetails;
 
 
 class peerProcess {
-    Socket requestSocket; //socket connect to the server
-    ObjectOutputStream out; //stream write to the socket
-    ObjectInputStream in; //stream read from the socket
+    Socket requestSocket; // Sockets for connecting to the server and peer-to-peer communication
+    ObjectOutputStream out; // Output stream to write to the socket
+    ObjectInputStream in; // Input stream to read from the socket
     ObjectOutputStream pToPOut;
     ObjectInputStream pToPIn;
-    String message; //message send to the server
-    String MESSAGE; //capitalized message read from the server
-    public static String peer_id;
-    private static int portNumber;
-    private static Thread serverThread;
-    public static PeerInitialization peerInfo;
-    public static CustomLogger logger;
+    String message; // Message to send to the server
+    String MESSAGE; // Capitalized message received from the server
+    public static String peer_id;// ID of the peer
+    private static int portNumber;// Port number for the peer
+    private static Thread serverThread; // Thread for running the server
+    public static PeerInitialization peerInfo;// Object containing peer info
+    public static CustomLogger logger;// Logger for logging activities
 
+    // Run method to start the peer process
     void run(String peerId) {
         try {
+            // Initialize logger
             logger = new CustomLogger();
             logger.initialize(peerId);
+
             //create a socket to connect to the server
             requestSocket = new Socket("localhost", 8000);
             System.out.println("Connected to localhost in port 8000");
-            //initialize inputStream and outputStream
+
+            // Initialize input and output streams for communication
             out = new ObjectOutputStream(requestSocket.getOutputStream());
             out.flush();
             in = new ObjectInputStream(requestSocket.getInputStream());
+
+            // Initialize peer information
             peerInfo = new PeerInitialization(peerId);
-            //initialize(peerId);
+            
             //get Input from standard input
             String[] arr = {peerId, String.valueOf(portNumber)};
+
+            // Create and start threads for peer communication
             new ThreadCreation(peerId,peerInfo,logger);
             sendMessage(arr);
             makeConnections(logger);
+
             //Receive the upperCase sentence from the server
             MESSAGE = (String) in.readObject();
+
             //show the message to the user
             System.out.println("Receive message: " + MESSAGE);
 
@@ -71,7 +79,7 @@ class peerProcess {
         }
     }
 
-    //send a message to the output stream
+    // Method to send a message to the server
     void sendMessage(String[] msg) {
         try {
             //stream write the message
@@ -82,9 +90,9 @@ class peerProcess {
         }
     }
 
-    //main method
+    
 
-
+    // Method to establish connections with other peers
     void makeConnections(CustomLogger logger) {
         GetPeerDetails peerDetails = new GetPeerDetails();
         peerDetails.initialize();
@@ -137,6 +145,7 @@ class peerProcess {
 
     //}
 
+    // Main method to start the peer process
     public static void main(String args[]) {
         if (args.length == 0) {
             System.out.println("No peer id is passed. Please pass it.");

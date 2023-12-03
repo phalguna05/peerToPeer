@@ -18,8 +18,10 @@ import java.util.*;
  */
 public class StartRemotePeers {
 
+	// Vector to store remote peer information
 	public Vector<RemotePeerInfo> peerInfoVector;
 
+	// Method to read configuration from PeerInfo.cfg file and populate peerInfoVector
 	public void getConfiguration()
 	{
 		String st;
@@ -50,7 +52,7 @@ public class StartRemotePeers {
 			// get current path
 			String path = System.getProperty("user.dir");
 
-			// start clients at remote hosts
+			// Start clients at remote hosts
 			for (int i = 0; i < myStart.peerInfoVector.size(); i++) {
 				RemotePeerInfo pInfo = (RemotePeerInfo) myStart.peerInfoVector.elementAt(i);
 
