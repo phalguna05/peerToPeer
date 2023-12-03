@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import config.PeerInitialization;
+import logger.CustomLogger;
 import peerFunctions.HandleConnections;
 import peerFunctions.ThreadCreation;
 import helperFunctions.GetPeerDetails;
@@ -23,9 +24,12 @@ class peerProcess {
     private static int portNumber;
     private static Thread serverThread;
     public static PeerInitialization peerInfo;
+    public static CustomLogger logger;
 
     void run(String peerId) {
         try {
+            logger = new CustomLogger();
+            logger.initialize(peerId);
             //create a socket to connect to the server
             requestSocket = new Socket("localhost", 8000);
             System.out.println("Connected to localhost in port 8000");
@@ -34,14 +38,12 @@ class peerProcess {
             out.flush();
             in = new ObjectInputStream(requestSocket.getInputStream());
             peerInfo = new PeerInitialization(peerId);
-//            initialize(peerId);
+            //initialize(peerId);
             //get Input from standard input
             String[] arr = {peerId, String.valueOf(portNumber)};
-            new ThreadCreation(peerId,peerInfo);
-
-
+            new ThreadCreation(peerId,peerInfo,logger);
             sendMessage(arr);
-            makeConnections();
+            makeConnections(logger);
             //Receive the upperCase sentence from the server
             MESSAGE = (String) in.readObject();
             //show the message to the user
@@ -83,7 +85,7 @@ class peerProcess {
     //main method
 
 
-    void makeConnections() {
+    void makeConnections(CustomLogger logger) {
         GetPeerDetails peerDetails = new GetPeerDetails();
         peerDetails.initialize();
         int initialPeerId = Integer.parseInt(peerDetails.getInitialPeerId());
@@ -94,6 +96,8 @@ class peerProcess {
             // handshake with peerId and itself
             Thread th = new Thread(new HandleConnections(convertedPeerId, i, peerInfo));
             th.start();
+            logger.tcpRequest(convertedPeerId,i);
+            peerInfo.addHandshakeRequest(convertedPeerId);
 
         }
     }

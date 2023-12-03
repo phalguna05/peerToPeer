@@ -1,0 +1,243 @@
+2023-12-02 04:07:26 1006 makes connection with 1001.
+2023-12-02 04:07:27 1001 is connected from Peer 1006
+2023-12-02 04:07:27 1006 makes connection with 1002.
+2023-12-02 04:07:27 1006 makes connection with 1001.
+2023-12-02 04:07:27 1006 makes connection with 1003.
+2023-12-02 04:07:27 1006 makes connection with 1004.
+2023-12-02 04:07:27 1006 makes connection with 1005.
+2023-12-02 04:07:27 1003 is connected from Peer 1006
+2023-12-02 04:07:27 1006 makes connection with 1003.
+2023-12-02 04:07:27 1004 is connected from Peer 1006
+2023-12-02 04:07:27 1006 makes connection with 1004.
+2023-12-02 04:07:27 1005 is connected from Peer 1006
+2023-12-02 04:07:27 1006 makes connection with 1005.
+2023-12-02 04:07:27 1002 is connected from Peer 1006
+2023-12-02 04:07:27 1006 makes connection with 1002.
+2023-12-02 04:07:27 1006 is unchoked by 1003.
+2023-12-02 04:07:27 1006 is unchoked by 1001.
+2023-12-02 04:07:27 1006 is unchoked by 1002.
+2023-12-02 04:07:27 1006 is unchoked by 1004.
+2023-12-02 04:07:27 1006 is unchoked by 1005.
+2023-12-02 04:07:28 1006 has the preferred neighbors 1004, 1003, 1002.
+2023-12-02 04:07:28 1006 has the optimistically unchoked neighbor 1001.
+2023-12-02 04:07:28 1006 has downloaded the piece 0 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 1 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 2 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 3 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 4 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 5 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 6 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 7 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 8 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 9 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 10 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 11 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 12 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 13 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 14 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 15 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 16 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 17 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 18 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 19 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 20 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 21 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 22 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 23 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 24 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 25 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 26 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 27 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 28 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 29 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 30 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 31 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 32 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 33 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 34 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 35 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 36 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 37 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 38 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 39 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 40 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 41 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 42 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 43 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:28 1006 has downloaded the piece 44 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 45 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 46 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 47 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 48 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 49 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 50 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 51 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 52 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 53 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 54 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 55 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 56 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 57 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 58 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 59 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 60 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 61 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 62 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 63 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 64 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 65 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 66 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 67 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 68 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 69 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 70 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 71 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 72 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 73 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 74 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 75 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 76 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 77 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 78 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 79 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 80 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 81 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 82 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 83 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 84 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 85 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 86 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 87 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 88 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 89 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 90 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 91 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 92 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 93 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 94 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 95 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 96 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:29 1006 has downloaded the piece 97 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 98 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 99 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 100 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 101 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 102 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 103 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 104 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 105 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 106 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 107 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 108 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 109 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 110 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 111 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 112 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 113 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 114 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 115 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 116 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 117 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 118 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 119 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 120 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 121 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 122 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 123 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 124 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 125 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 126 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 127 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 128 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 129 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 130 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 131 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 132 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 133 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 134 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 135 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 136 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 137 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 138 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 139 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 140 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 141 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 142 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 143 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 144 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 145 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 146 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 147 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 148 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 149 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:30 1006 has downloaded the piece 150 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 151 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 152 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 153 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 154 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 155 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 156 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 157 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 158 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 159 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 160 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 161 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 162 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 163 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 164 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 165 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 166 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 167 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 168 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 169 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 170 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 171 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 172 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 173 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 174 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 175 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 176 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 177 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 178 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 179 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 180 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 181 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 182 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 183 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:31 1006 has downloaded the piece 184 from 1001. Now the number of pieces it has is0.
+2023-12-02 04:07:32 1006 is unchoked by 1005.
+2023-12-02 04:07:32 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:07:37 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:07:37 1006 has the optimistically unchoked neighbor 1003.
+2023-12-02 04:07:42 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:07:47 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:07:47 1006 has the optimistically unchoked neighbor 1001.
+2023-12-02 04:07:52 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:07:57 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:07:57 1006 has the optimistically unchoked neighbor 1005.
+2023-12-02 04:08:02 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:07 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:07 1006 has the optimistically unchoked neighbor 1001.
+2023-12-02 04:08:12 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:17 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:17 1006 has the optimistically unchoked neighbor 1001.
+2023-12-02 04:08:22 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:27 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:27 1006 has the optimistically unchoked neighbor 1001.
+2023-12-02 04:08:32 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:37 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:37 1006 has the optimistically unchoked neighbor 1005.
+2023-12-02 04:08:42 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:47 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:47 1006 has the optimistically unchoked neighbor 1005.
+2023-12-02 04:08:52 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:57 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:08:57 1006 has the optimistically unchoked neighbor 1003.
+2023-12-02 04:10:17 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:11:32 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:11:32 1006 has the optimistically unchoked neighbor 1005.
+2023-12-02 04:12:47 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:14:02 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:14:02 1006 has the optimistically unchoked neighbor 1005.
+2023-12-02 04:15:17 1006 has the preferred neighbors 1004, 1002, 1001.
+2023-12-02 04:18:55 1006 has the preferred neighbors 1004, 1002, 1001.

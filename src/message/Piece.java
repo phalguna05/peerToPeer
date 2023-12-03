@@ -7,8 +7,9 @@ import java.util.Properties;
 public class Piece {
     byte[] content;
     int pieceIndex;
+    Boolean isPresent;
 
-    public Piece() {
+    public Piece(int index) {
         Properties properties = new Properties();
         try {
             FileInputStream fileInputStream = new FileInputStream("Common.cfg");
@@ -18,9 +19,9 @@ public class Piece {
             e.printStackTrace();
         }
         int pieceSize = (int) Double.parseDouble(properties.getProperty("PieceSize"));
-
         this.setContent(new byte[pieceSize]);
-        this.setPieceIndex(-1);
+        this.setPieceIndex(index);
+        this.setIsPresent(false);
     }
 
 
@@ -34,6 +35,14 @@ public class Piece {
 
     public int getPieceIndex() {
         return pieceIndex;
+    }
+
+    public void setIsPresent(Boolean flag){
+        isPresent = flag;
+    }
+
+    public Boolean getIsPresent(){
+        return isPresent;
     }
 
     public void setPieceIndex(int pieceIndex) {

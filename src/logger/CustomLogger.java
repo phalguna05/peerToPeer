@@ -14,13 +14,60 @@ public class CustomLogger {
     private FileHandler fileHandler;
 
     public static void log(String message) {
-        logger.info(currentPeerID + ": " + message);
-        System.out.println(LogFormat.getMessage(message));
+        logger.info(message);
+    }
+    public static void tcpRequest(int peerID1,int peerID2)
+    {
+        logger.info(peerID1+" makes connection with "+peerID2+".");
+    }
+    public static void tcpDone(int peerID1,int peerID2)
+    {
+        logger.info(peerID1+" is connected from Peer "+peerID2);
+    }
+    public static void changeOfPreferredNeighbors(int peerID1,int[] peers)
+    {
+        String p="";
+        for (int i : peers) {
+            p+=i+", ";
+        }
+        logger.info(peerID1+" has the preferred neighbors "+p.substring(0,p.length()-2)+".");
+    }
+    public static void changeOfOptimisticallyUnchokedNeighbor(int peerID1,int peerID2)
+    {
+        logger.info(peerID1+" has the optimistically unchoked neighbor "+peerID2+".");
+    }
+    public static void unchoking(int peerID1,int peerID2)
+    {
+        logger.info(peerID1+" is unchoked by "+peerID2+".");
+    }
+    public static void choking(int peerID1,int peerID2)
+    {
+        logger.info(peerID1+" is choked by "+peerID2+".");
+    }
+    public static void have(int peerID1,int peerID2, int index)
+    {
+        logger.info(peerID1+" received the ‘have’ message from "+peerID2+" for the piece "+index+".");
+    }
+    public static void interested(int peerID1,int peerID2)
+    {
+        logger.info(peerID1+" received the ‘interested’ message from "+peerID2+".");
+    }
+    public static void notInterested(int peerID1,int peerID2)
+    {
+        logger.info(peerID1+" received the ‘not interested’ message from "+peerID2+".");
+    }
+    public static void downloading(int peerID1,int peerID2, int index, int numberOfPieces)
+    {
+        logger.info(peerID1+" has downloaded the piece "+index+" from "+peerID2+". Now the number of pieces it has is "+numberOfPieces+".");
+    }
+    public static void downloaded(int peerID1)
+    {
+        logger.info(peerID1+" has downloaded the complete file.");
     }
 
     public void initialize(String peerID) {
         try {
-            fileHandler = new FileHandler("logRecords" + peerID + ".log");
+            fileHandler = new FileHandler("log_peer_" + peerID + ".log");
             fileHandler.setFormatter(new LogFormat());
             logger.addHandler(fileHandler);
             logger.setUseParentHandlers(false);
@@ -34,7 +81,7 @@ public class CustomLogger {
         private static final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
 
         static String getMessage(String message) {
-            return dateTimeFormatter.format(LocalDateTime.now()) + " PEER " + message + "\n";
+            return dateTimeFormatter.format(LocalDateTime.now()) +" "+ message + "\n";
         }
 
         @Override

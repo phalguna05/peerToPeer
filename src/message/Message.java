@@ -1,5 +1,7 @@
 package message;
 
+import java.util.ArrayList;
+
 public class Message {
     public static byte[] messageLength;
     public static byte[] messageType;
@@ -39,6 +41,19 @@ public class Message {
         return message;
     }
 
+    public static int getTypeOfTheMessage(ArrayList<Integer> arr){
+        int type = arr.get(4);
+        int convertedType = type & 0xFF;
+        return convertedType;
+    }
+
+    public static ArrayList<Integer> getPayloadFromMessage(ArrayList<Integer> arr){
+        ArrayList<Integer> payload = new ArrayList<>();
+        for(int i=5;i<arr.size()-4;i++){
+            payload.add(arr.get(i));
+        }
+        return payload;
+    }
 
 
 
